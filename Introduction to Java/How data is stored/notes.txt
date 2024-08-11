@@ -421,6 +421,7 @@ Output:
 -------------------------------------------------------------------------
 Operators-----------------
 _________________________________________
+___________________________________________________
 
 
 a) Arithmetic operators---------------->>>>>>>>>>>>>>>
@@ -430,13 +431,13 @@ Arithmetic operators are used in mathematical expression in the same way that
 are used in algebra.
 
         -------------------------------------------------------------------------
-            OPERATOR                            DESCRIPTION
+        |    OPERATOR              |               DESCRIPTION
         -------------------------------------------------------------------------
-            +                              Adds two operands
-            -                              Subtracts second operand from first
-            *                              Multiplies two operands
-            /                              Divides numerator by denominator
-            %                              Calculates Remainder of division
+        |    +                     |         Adds two operands
+        |    -                     |         Subtracts second operand from first
+        |    *                     |         Multiplies two operands
+        |    /                     |         Divides numerator by denominator
+        |    %                     |         Calculates Remainder of division
         ---------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -449,14 +450,14 @@ between two entities. The following table lists the relation operators supported
 by Java.      
     
     -------------------------------------------------------------------------------------
-        OPERATOR                  DESCRIPTION
+        OPERATOR      |            DESCRIPTION
     ------------------------------------------------------------------------------------
-            ==            Check if two operands are equal
-            !=            Check if two operands are not equal.
-            >             Check if operand on the left is greater than operand on the right
-            <             Check if operand on the left is smaller than right operand
-            >=            Check if left operand is greater than or equal to right operand
-            <=            Check if operand on left is smaller than or equal to right operand
+            ==        |    Check if two operands are equal
+            !=        |    Check if two operands are not equal.
+            >         |    Check if operand on the left is greater than operand on the right
+            <         |    Check if operand on the left is smaller than right operand
+            >=        |    Check if left operand is greater than or equal to right operand
+            <=        |    Check if operand on left is smaller than or equal to right operand
     -----------------------------------------------------------------------------------------
 
 
