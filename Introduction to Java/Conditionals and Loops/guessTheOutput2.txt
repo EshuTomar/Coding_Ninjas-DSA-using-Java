@@ -1,0 +1,41 @@
+Find the output of the following code:
+____________________________________________
+
+
+
+public static void main (String[] args) {
+    int a=50;
+    int b=5;
+    if(a/0==b)
+    {
+
+        System.out.println("Hello");
+    }
+    else
+    {
+        System.out.println("Hi");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Output:
+    Run time error
+    (syntx of the code is correct, but a/0 gives run time error)
