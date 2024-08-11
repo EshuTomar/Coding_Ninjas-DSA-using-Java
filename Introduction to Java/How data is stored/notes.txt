@@ -338,3 +338,149 @@ Example:
 float float_val = 10.4f;              //float value
 double val = 10.4;                    //double value
 
+-----------------------------------------------------------------------------------------
+c) How are characters stored------------->>>>>>>
+______________________________________________________
+
+
+Java uses Unicode to represent characters. As we know system only understands
+binary language and thus everything has to be stored in the form binaries. So for
+every character there is corresponding code – Unicode/ASCII code and binary
+equivalent of this code is actually stored in memory when we try to store a char.
+Unicode defines a fully international character set that can represent all the
+characters found in all human languages. In Java, char is a 16-bit type. The range
+of a char is 0 to 65,536.
+
+Example code:
+
+public static void main(String[] args) {
+    char ch1, ch2;
+    ch1 = 88; //ASCII value for ‘X’
+    ch2 = ‘Y’;
+    System.out.println(ch1 +" " +ch2);
+}
+
+Output:
+X Y
+
+
+
+Adding int to char-----
+_______________________
+
+When we add int to char, we are basically adding two numbers i.e. one
+corresponding to the integer and other is corresponding code for the char.
+
+Example code:
+
+public static void main(String[] args) {
+    System.out.println(‘a’ + 1);
+}
+
+Output:
+98
+
+Here, we added a character and an int, so it added the ASCII value of char ‘a’ i.e
+97 and int 1. So, answer will be 98.
+
+Similar logic applies to adding two chars as well, when two chars are added their
+codes are actually added i.e. ‘a’ + ‘b’ wil give 195.
+
+
+
+Typecasting------------------
+____________________________________
+
+    1. Widening or Automatic type conversion:
+    In Java, automatic type conversion takes place when the two types are compatible
+    and size of destination type is larger than source type.
+
+    2. Narrowing or Explicit type conversion:
+    When we are assigning a larger type value to a variable of smaller type, then we
+    need to perform explicit type casting.
+
+Example code:
+
+public static void main(String[] args) {
+    int i = 100;
+    long l1 = i; //automatic type casting
+    double d = 100.04;
+    long l2 = (long)d; //explicit type casting
+    System.out.println(i);
+    System.out.println(l1);
+    System.out.println(d);
+    System.out.println(l2);
+}
+
+Output:
+100
+100
+100.04
+100
+
+-------------------------------------------------------------------------
+Operators-----------------
+_________________________________________
+
+
+a) Arithmetic operators---------------->>>>>>>>>>>>>>>
+_____________________________________________________________
+
+Arithmetic operators are used in mathematical expression in the same way that
+are used in algebra.
+
+        -------------------------------------------------------------------------
+            OPERATOR                            DESCRIPTION
+        -------------------------------------------------------------------------
+            +                              Adds two operands
+            -                              Subtracts second operand from first
+            *                              Multiplies two operands
+            /                              Divides numerator by denominator
+            %                              Calculates Remainder of division
+        ---------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+
+ b) Relational operators--------->>>>>>>>>.
+ __________________________________________________
+
+Relational Operators are the operators that used to test some king of relation
+between two entities. The following table lists the relation operators supported
+by Java.      
+    
+    -------------------------------------------------------------------------------------
+        OPERATOR                  DESCRIPTION
+    ------------------------------------------------------------------------------------
+            ==            Check if two operands are equal
+            !=            Check if two operands are not equal.
+            >             Check if operand on the left is greater than operand on the right
+            <             Check if operand on the left is smaller than right operand
+            >=            Check if left operand is greater than or equal to right operand
+            <=            Check if operand on left is smaller than or equal to right operand
+    -----------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+
+c) Logical operators------------------>>>>>>>>>>>>
+______________________________________________________
+
+Java supports following 3 logical operators. The result of logical operators is a
+Boolean i.e. true or false.
+
+        -------------------------------------------
+            OPERATOR                 DESCRIPTION
+        --------------------------------------------                    
+            &&                          AND
+            ||                          OR
+            !                           NOT
+        --------------------------------------------    
+
+Example:
+
+Suppose a = true and b= false, 
+then:
+
+(a && b) is false
+(a || b) is true
+(!a) is false
